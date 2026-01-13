@@ -1,0 +1,38 @@
+
+
+/*estilos del modal*/
+.modal-title {
+    text-align: center;
+    width: 100%;
+    color: #6c757d;
+}
+
+
+.modal-content {
+  background-color: #ffffff;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.minimalist-input {
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.minimalist-input:focus {
+  border-color: #111827;
+  box-shadow: none;
+}
+
+.btn-dark {
+  border-radius: 0.75rem;
+}
+
+.btn-light {
+  border-radius: 0.75rem;
+}
