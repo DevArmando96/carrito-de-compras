@@ -1,36 +1,48 @@
 <?php
 //añade el modal para registrara el prodcuto
 include 'addproducto.php';
-//añade la conexion a la base de datos
-require_once __DIR__ . '/config/connection.php';
-
-$connection  = new Database();
-$pdo = $connection->getConnection();
+//añade el encabezado del sitio.
+include 'layout/header.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <!--instalar bootstrap--->
-     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-     <!--diseño css---->
-     <link rel="stylesheet" href="css/style.css">
-     <!--linkear jqueery--->
-    <script src="jquery/jquery-3.7.1.min.js"></script>
-     <!--linkea script de js-->
-
-</head>
 
 <body>
 
 
      <!--abre boton para agregar producto--->
-     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addproducto">Agregar Producto 🛒
-     </button>
+     <div id="modal">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addproducto">Agregar Producto 🛒
+          </button>
+     </div>
+
+
+     <!--tabla de productos--->
+     <div class="container">
+          <table class="table">
+               <thead>
+                    <tr>
+                         <th>Nombre</th>
+                         <th>Descripcion</th>
+                         <th>Precio</th>
+                         <th>Stock</th>
+                    </tr>
+               </thead>
+               <tbody id="contenido-tabla">
+               </tbody>
+          </table>
+
+          
+         
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" id="btn-anterior">Anterior</a></li>
+    <li class="page-item"><span class="page-link" id="num-pagina">Pagina 1</span></li>
+    <li class="page-item"><a class="page-link" id="btn-siguiente">Siguiente</a></li>
+  </ul>
+
+     </div>
 
 
 
@@ -43,8 +55,10 @@ $pdo = $connection->getConnection();
 
 
      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-<!--añade el script de la carpeta js-->
+     <!--añade el script de la carpeta js-->
      <script src="js/addproducto.js"></script>
+     <!--añede la paginacion--->
+     <script src="js/paginacion.js"></script>
 </body>
 
 </html>
