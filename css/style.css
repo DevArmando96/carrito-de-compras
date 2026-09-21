@@ -1,12 +1,9 @@
-
-
 /*estilos del modal*/
 .modal-title {
-    text-align: center;
-    width: 100%;
-    color: #6c757d;
+  text-align: center;
+  width: 100%;
+  color: #6c757d;
 }
-
 
 .modal-content {
   background-color: #ffffff;
@@ -35,4 +32,56 @@
 
 .btn-light {
   border-radius: 0.75rem;
+}
+
+/* para cuerpo de la pagina */
+
+body{
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8f9fa;
+}
+/* boton de modal para agregar producto*/
+
+/* Contenedor del botón */
+#modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Estilo personalizado para el botón */
+.btn-primary {
+    background-color: #1a1a1a; /* Negro suave */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto y el emoji */
+}
+
+/* Efecto Hover (al pasar el mouse) */
+.btn-primary:hover {
+    background-color: #404040;
+    transform: translateY(-2px); /* Pequeño salto */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto Click */
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* estilo para flex box */
+
+.container div{
+  display: flex;
+  flex-direction: row;
 }
