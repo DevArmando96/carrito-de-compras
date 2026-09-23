@@ -7,7 +7,7 @@ class Database {
     private $user = 'root';
     private $pass = '';
     private $charset = 'utf8mb4';
-    private $port = '3307';
+    private $port = '3306';
     private $pdo;
 
 

@@ -8,7 +8,7 @@ $connection  = new Database();
 $pdo = $connection->getConnection();
 // Parámetros de paginación
 $pagina = isset($_GET['p']) ? (int)$_GET['p'] : 1;
-$por_pagina = 1;
+$por_pagina = 5;
 $inicio = ($pagina > 1) ? ($pagina * $por_pagina - $por_pagina) : 0;
 
 // Consulta con LIMIT y OFFSET

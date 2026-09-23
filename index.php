@@ -16,9 +16,26 @@ include 'layout/header.php';
      <div id="modal">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addproducto">Agregar Producto 🛒
           </button>
+          
      </div>
 
 
+<!--barra de busqueda-->
+   <div class="search-container">
+    <div class="input-group">
+        <span class="input-group-text bg-white border-end-0">
+            🔍
+        </span>
+
+        <input 
+            class="form-control border-start-0"
+            type="search"
+            placeholder="Buscar producto..."
+            aria-label="Buscar"
+            id='buscar'
+        >
+    </div>
+</div>
      <!--tabla de productos--->
      <div class="container">
           <table class="table">
@@ -59,6 +76,8 @@ include 'layout/header.php';
      <script src="js/addproducto.js"></script>
      <!--añede la paginacion--->
      <script src="js/paginacion.js"></script>
+     <!--añade barra de busqueda-->
+     <script src="js/read.js"></script>
 </body>
 
 </html>

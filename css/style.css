@@ -85,3 +85,34 @@ body{
   display: flex;
   flex-direction: row;
 }
+
+/* estilo de barra de busqueda */
+.search-container {
+max-width: 350px;
+margin: 0 auto 50px auto;
+}
+
+.search-container .input-group {
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.search-container .form-control {
+height: 42px;
+border-color: #dee2e6;
+}
+
+.search-container .input-group-text {
+border-color: #dee2e6;
+background-color: #fff;
+}
+
+.search-container .form-control:focus {
+box-shadow: none;
+border-color: #86b7fe;
+}
+
+.search-container .form-control::placeholder {
+color: #999;
+}

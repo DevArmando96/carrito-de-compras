@@ -1,4 +1,6 @@
 <?php
+//agregar producto
+
 // Desactivar visualización de errores de texto para no romper el JSON
 ini_set('display_errors', 0);
 error_reporting(E_ALL);
@@ -38,6 +40,7 @@ try {
         ':act' => $data['activo']      ?? 1
     ]);
 
+    
     echo json_encode([
         "status" => "success",
         "message" => "Producto registrado correctamente."
